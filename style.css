@@ -1,0 +1,176 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #131921;
+  padding: 10px 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 100px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  flex: 1;
+  margin: 0 20px;
+  max-width: 600px;
+}
+
+.search-bar select,
+.search-bar input,
+.search-bar button {
+  padding: 8px;
+  border: none;
+}
+
+.search-bar input {
+  flex: 1;
+}
+
+.search-bar button {
+  background: #febd69;
+  cursor: pointer;
+}
+
+/* Right Menu */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.option {
+  font-size: 12px;
+}
+
+.option .bold {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cart {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  background: #232f3e;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Hero Banner */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Products */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.product a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007185;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.product a:hover {
+  color: #c7511f;
+}
+
+/* Footer */
+.footer {
+  background: #131921;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-links {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 80px;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .option span {
+    font-size: 10px;
+  }
+}
