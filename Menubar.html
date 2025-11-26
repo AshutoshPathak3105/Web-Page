@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Over Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+
+<!-- HEADER (Separate) -->
+<header>
+    <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <h2 class="logo">My Website</h2>
+</header>
+
+<!-- LEFT SIDE MENU (Displays Over Slider Only) -->
+<nav class="side-menu" id="sideMenu">
+   <span class="close-btn" id="closeMenu">
+      <h6>UserName</h6>
+      &times;</span><br>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<!-- IMAGE SLIDER (Separate DIV) -->
+<div class="slider">
+    <img src="img_2.jpg" class="slide active">
+    <img src="img_1.jpg" class="slide">
+    <img src="img_3.jpg" class="slide">
+    <img src="img_4.jpg" class="slide">
+    <img src="img_5.jpg" class="slide">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+    <div class="dots"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

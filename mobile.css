@@ -1,0 +1,53 @@
+@media (max-width: 600px) {
+    header {
+        height: 30px; /* still fixed */
+    }
+
+    .hamburger{
+         width: 20px;
+         margin: 1px;
+    }
+
+    .hamburger div{
+         height: 1.5px;
+         width: 100%;
+         margin-right:8px;
+         border-radius: 8px;
+    }
+
+    .menu-icon div {
+        height: 3px;
+    }
+
+    .logo {
+        font-size: 14px;
+        margin-left: 35px;
+    }
+
+    .side-menu{
+        position: absolute;
+        top: 40px; 
+    }
+
+    .slider {
+        height: 160px;
+    }
+
+    .slide {
+        height: 160px;
+    }
+
+    .prev, .next{
+        position: absolute;
+        top:50%;
+        font-size:10px;
+        align-items: center;
+        justify-content: center;
+        z-index:2;
+        color:rgba(0, 0, 0, 0.582);
+ }
+
+ .prev{ left: 15px; }
+.next{ right: 15px; }
+
+}
